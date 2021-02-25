@@ -4,4 +4,4 @@ show_downloads: true
 google_analytics:
 theme: jekyll-theme-cayman
 sass:
-    sass_dir: ./_scss
+    sass_dir: ./_sass
