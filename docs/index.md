@@ -1,8 +1,7 @@
 ---
 layout: default
 ---
-![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
-Pawel
+
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
 [Link to another page](./another-page.html).
