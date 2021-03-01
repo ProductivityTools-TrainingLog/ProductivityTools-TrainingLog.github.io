@@ -7,34 +7,34 @@ node Nuget.org{
     [SportsTracker.SDK]
 }
 
-node PowershellGallery{
-    [TrainingLog.Endomondo]
-    [TrainingLog.SportsTracker]
-    [SportTrackerCmdlet]
+node PowershellGallery.com{
+    [TrainingLog.Endomondo.Cmdlet]
+    [TrainingLog.Cmdlet]
+    [TrainingLog.SportsTracker.Cmdlet]
+    [SportTracker.Cmdlet]
 }
 
-node Sports-Tracker{
-    [Sports-Tracker.Api]
+node [Sports-Tracker.com]{
+    [api.sports-tracker.com]
 }
 
 
-node ProductivityTools.Server{
+node [productivitytools.tech]{
     [TrainingLog.Api]
-}
-
-node Server{
     database "SQL\n" {
     [Data]
-
+    }
 }
 
- [TrainingLog.SportsTracker] -down->[SportsTracker.SDK]
- [SportsTracker.SDK] -down->[Sports-Tracker.Api]
- [TrainingLog.Endomondo] -down->[TrainingLog.Contract]
+
+ [TrainingLog.SportsTracker.Cmdlet] -down->[SportsTracker.SDK]
+ [SportsTracker.SDK] -down->[api.sports-tracker.com]
+ [TrainingLog.Endomondo.Cmdlet] -down->[TrainingLog.Contract]
  [TrainingLog.Contract] -down->  [TrainingLog.Api]
- [TrainingLog.SportsTracker] -down-> [TrainingLog.Contract]
+ [TrainingLog.SportsTracker.Cmdlet] -down-> [TrainingLog.Contract]
+ [TrainingLog.Cmdlet] -down-> [TrainingLog.Contract]
  [TrainingLog.Api] -down->Data
- [SportTrackerCmdlet] -down->[SportsTracker.SDK]
+ [SportTracker.Cmdlet] -down->[SportsTracker.SDK]
  
  
 
