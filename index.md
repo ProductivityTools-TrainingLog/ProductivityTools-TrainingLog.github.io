@@ -1,4 +1,4 @@
-## Training Log is group of applications which helps to manage your sport activities. 
+Training Log is group of applications which helps to manage your sport activities. 
 Here you can find the list of the projects which it contain [Organization](https://github.com/ProductivityTools-TrainingLog)
 
 # Projects
@@ -12,7 +12,7 @@ Cmdlet allows to add trainings to https://sports-tracker.com/ website. It uses S
 API exposes all trainings. It should be treated as private backup of all gpx, images, and manual trainings.
 
 ## [TrainingLog.Contract](https://github.com/ProductivityTools-TrainingLog/ProductivityTools.TrainingLog.Contract)
-DTO's exposed by TrainingLog.Api.
+DTO's exposed by TrainingLog.Api. 
 
 ## TrainingLog.Cmdlet
 Module doesn't exist maybe in the future I will create it to add trainings directly to the api
