@@ -3,6 +3,7 @@
 title Solution TrainingLog
 
 node Nuget.org{
+    [TrainingLog.SDK]
     [TrainingLog.Contract]
     [SportsTracker.SDK]
 }
@@ -29,6 +30,7 @@ node [productivitytools.tech]{
 
  [TrainingLog.SportsTracker.Cmdlet] -down->[SportsTracker.SDK]
  [SportsTracker.SDK] -down->[api.sports-tracker.com]
+ [TrainingLog.SDK] -down->[TrainingLog.Contract]
  [TrainingLog.Endomondo.Cmdlet] -down->[TrainingLog.Contract]
  [TrainingLog.Contract] -down->  [TrainingLog.Api]
  [TrainingLog.SportsTracker.Cmdlet] -down-> [TrainingLog.Contract]
